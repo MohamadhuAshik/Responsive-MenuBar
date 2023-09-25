@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(124761.jpg);
+    background-size:cover ;
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: transparent;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav li a {
+    color: black;
+    
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#check {
+    display: none;
+}
+
+label .menubar {
+    float: right;
+    height: 80px;
+}
+
+a.active,
+a:hover {
+    background-color: yellow;
+}
+
+@media (max-width:1500px) {
+    .menubar {
+        display: none;
+    }
+
+    @media (max-width:500px) {
+        .menubar {
+            display: inline-block;
+        }
+    }
+
+    @media (max-width:500px) {
+        ul {
+            position: fixed;
+            width: 100%;
+            width: 100vh;
+            background: blue;
+            top: 80px;
+            left: -1%;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+
+        nav ul li a {
+            font-size: 20px;
+        }
+
+        a:hover,
+        a.active {
+            background:yellowgreen;
+        }
+        #check:checked ~ul {
+            display: none;
+        }
+
+    }
+    
+
+}
